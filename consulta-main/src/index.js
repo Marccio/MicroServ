@@ -6,7 +6,9 @@ const baseConsulta = {};
 const funcoes = {
 
     ClienteCriado: (cliente) => {
+        console.log("Cliente criado antes")
         baseConsulta[cliente.contador] = cliente;
+        console.log("depois")
     },
 
     ClienteDeletado: (id) => {

@@ -1,5 +1,5 @@
 {
-  "name": "barreamento-de-eventos",
+  "name": "barreamento-de-eventos-main",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elcioabrahao/barreamento-de-eventos.git"
+    "url": "git+https://github.com/Marccio/MicroServ/barreamento-de-eventos-main.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elcioabrahao/barreamento-de-eventos/issues"
+    "url": "git+https://github.com/Marccio/MicroServ/barreamento-de-eventos-main/issues"
   },
-  "homepage": "https://github.com/elcioabrahao/barreamento-de-eventos#readme",
+  "homepage": "git+https://github.com/Marccio/MicroServ/barreamento-de-eventos-main#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",

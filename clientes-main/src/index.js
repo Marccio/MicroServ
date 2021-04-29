@@ -12,12 +12,12 @@ const funcoes = {
         axios.post("http://localhost:10000/eventos", {
             tipo: "ClienteCriado",
             dados: {
-                contador,
-                nome,
-                endereco,
-                idade,
-                status,
-                qtd
+                contador: cliente.contador,
+                nome: cliente.nome,
+                endereco: cliente.endereco,
+                idade: cliente.idade,
+                status: cliente.status,
+                qtd: cliente.qtd
             },
         });
     },
@@ -43,8 +43,8 @@ app.post('/clientes', async(req, res) => {
         nome,
         endereco,
         idade,
-        status = "aguardando",
-        qtd = 0
+        status: "aguardando",
+        qtd: 0
     }
     await axios.post("http://localhost:10000/eventos", {
         tipo: "ClienteClassificar",
@@ -53,8 +53,8 @@ app.post('/clientes', async(req, res) => {
             nome,
             endereco,
             idade,
-            status = "aguardando",
-            qtd = 0
+            status: "aguardando",
+            qtd: 0
         },
     });
     res.status(201).send(clientes[contador]);
@@ -84,7 +84,7 @@ app.put('/clientes/:id', async(req, res) => {
         nome: nome != null ? nome : clienteVelho.nome,
         endereco: endereco != null ? endereco : clienteVelho.endereco,
         idade: idade != null ? idade : clienteVelho.idade,
-        status = "aguardando",
+        status: "aguardando",
         qtd: clienteVelho.qtd
     }
     clienteNovo = clientes[id]

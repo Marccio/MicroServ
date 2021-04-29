@@ -8,7 +8,7 @@ const palavraChave = 60;
 const funcoes = {
     ClienteClassificar: (cliente) => {
         cliente.status =
-            cliente.idade >= (palavraChave) ?
+            cliente.idade >= palavraChave ?
             "prioritário" :
             "comum";
         axios.post('http://localhost:10000/eventos', {

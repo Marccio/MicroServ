@@ -19,7 +19,7 @@ app.post("/eventos", (req, res) => {
     try {
         funcoes[req.body.tipo](req.body.dados);
     } catch (erro) {}
-    res.status(200).send(baseConsulta);
+    res.status(200).send({ msg: "ok" });
 });
 
 app.post('/clientes/:id/ingressos', async(req, res) => {
@@ -68,5 +68,5 @@ app.delete('/clientes/:id/ingressos', (req, res) => {
 });
 
 app.listen(5000, (() => {
-    console.log('Clientes. Porta 5000');
+    console.log('Ingressos. Porta 5000');
 }));

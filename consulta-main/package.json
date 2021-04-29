@@ -1,5 +1,5 @@
 {
-  "name": "consulta",
+  "name": "consulta-main",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,11 +17,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elcioabrahao/consulta.git"
+    "url": "git+https://github.com/Marccio/MicroServ/consulta-main.git"
   },
   "bugs": {
-    "url": "https://github.com/elcioabrahao/consulta/issues"
+    "url": "https://github.com/Marccio/MicroServ/consulta-main/issues"
   },
-  "homepage": "https://github.com/elcioabrahao/consulta#readme",
+  "homepage": "https://github.com/Marccio/MicroServ/consulta-main#readme",
   "description": ""
 }
